@@ -1,0 +1,164 @@
+#contact-us {
+    margin-top: 240px;    
+}
+#contact-us .row {
+    --bs-gutter-x: 0;
+    padding: 48px 56px;
+    background: rgba(52, 33, 52, 0.5);
+    backdrop-filter: blur(26px);
+    border-radius: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+}
+#contact-us .contact-us-content h1 {
+    font-family: "Clash Display Bold";
+    font-size: 70px;
+    line-height: 76px;
+    background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 32px;
+}
+#contact-us .contact-us-content p {
+    font-size: 16px;
+    line-height: 28px;
+    color:var(--paragraph);
+    max-width: 400px;
+    margin-bottom: 95px;
+}
+#contact-us .contact-us-content p a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 28px;
+    background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-weight: 700;
+}
+#contact-us .contact-us-content .contact-us-img{
+
+}
+#contact-us form div {
+    margin-bottom: 28px;
+}
+
+#contact-us form label{
+    font-family: "Clash Display Semi Bold";
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+}
+#contact-us form input {
+    height: 52px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    box-shadow: none;
+    color: white;
+}
+#contact-us form textarea {
+    height: 160px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    outline: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    color: white;
+    resize: none;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    box-shadow: none;
+}
+#contact-us form input[type ="submit"]{
+    padding: 12px 49px;
+    color:white ;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Clash Display Semi Bold";
+    background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    border-radius: 50px;
+    border: none;
+}
+@media(min-width:992px) and (max-width:1199.98px) {
+    #contact-us .contact-us-content h1 {
+        font-size: 60px;
+    }
+}
+@media(min-width:768px) and (max-width:991.98px){
+    .contact-us-content {
+        text-align: center;
+    }
+    .contact-us-content p {
+        margin: auto;
+    }
+}
+@media(max-width:767.98px){
+    #contact-us {
+        margin-top: 89px;
+    }
+    #contact-us .contact-us-content h1 {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+    #contact-us .row {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 56px;
+        border-radius: 20px;
+    }
+    #contact-us .contact-us-content p {
+        margin-bottom: 56px;
+    }
+    #contact-us form textarea {
+        height: 200px;
+    }
+    #contact-us form div {
+        margin-bottom: 16px;
+    }
+    #contact-us form div:nth-child(4){
+        margin-bottom: 30px !important;
+    }
+}
+#contact-us .img-holder {
+    top: -250px;
+    z-index: -1;
+}
+#contact-us .img-holder img ,
+#contact-us .img-holder-2 img , 
+#contact-us .img-holder-3 img{
+    background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    opacity: 0.5;
+    filter: blur(200px);
+}
+#contact-us .img-holder-2 {
+ right: 0;
+ z-index: -1;
+ top: 350px;
+}
+#footer .img-holder-3 {
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+#footer .img-holder-3 img{
+    background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    opacity: 0.3;
+    filter: blur(200px);
+}
+@media(max-width:767.98px){
+    #contact-us .img-holder {
+        z-index: -1;
+        top: 220px;
+    }
+    #footer .img-holder-3 {
+        bottom: 150px;
+    }
+    #footer .img-holder-3 img {
+        opacity: 0.4;
+    }
+}

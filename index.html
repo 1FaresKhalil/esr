@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chating App</title>
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="./css/Swiper.css" />
+    <!-- Global css -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="./css/landing.css" />
+  </head>
+  <body>
+    <p class="clock"></p>
+    <!-- Nav -->
+    <div class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a
+            style="
+              text-decoration: none;
+              color: #fff;
+              font-size: 28px;
+              font-weight: 700;
+            "
+            class="navbar-brand"
+            href="#"
+          >
+            BONBON
+          </a>
+          <button
+            onclick="disableScrolling()"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img class="toggler-icon" src="images/Toggle.png" alt="" />
+            <img class="close-icon hide" src="images/close.png" alt="" />
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="img-holder position-absolute d-block d-lg-none">
+              <img class="img-fluid" src="images/toggler.png" alt="" />
+            </div>
+            <p class="heading d-block d-lg-none">Menu</p>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sign-in.html">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sign-up.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">BONBON Wiki</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+            <p class="rights d-block d-lg-none">
+              © 2022 BONBON. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </nav>
+      <!-- End Nav -->
+      <!-- Start Landing -->
+      <div class="landing position-relative pb-4">
+        <div class="img-hold position-absolute">
+          <!-- <img class="img-fluid d-block d-md-none" src="images/blor.png" alt="" /> -->
+          <!-- <img
+          class="img-fluid d-none d-md-block"
+          src="images/cov-1 (1).png"
+          alt=""
+        /> -->
+        </div>
+        <div class="img-hold-2 position-absolute">
+          <img class="img-fluid" src="images/cov-20.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="landing-content">
+            <div
+              class="row landing-row justify-content-center align-items-center"
+            >
+              <div class="col-md-6 chat-content">
+                <h1>CHAT On Easy Mode</h1>
+                <p class="">
+                  The best Chating app! We encourage users to be friendly to
+                  form a real, trustworthy, and transparent connection.
+                </p>
+                <div
+                  class="app-donwload d-flex justify-content-center justify-content-md-start"
+                >
+                  <a href="">
+                    <img
+                      class="img-fluid d-block"
+                      src="images/AppStore.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      class="img-fluid d-block"
+                      src="images/GooglePlay.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chats-users">
+            <div class="row gy-none gy-md-4 gy-lg-0">
+              <div class="col-lg-4 col-md-6">
+                <div class="users">
+                  <h2 class="d-md-none d-block">1,000,000</h2>
+                  <h2 class="d-none d-md-block">10,000,000</h2>
+                  <p>
+                    Users <br />
+                    Worldwide
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="users users-2">
+                  <h2>13,000</h2>
+                  <p>chats and connectings everyday</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="users users-3">
+                  <h2>136</h2>
+                  <p>Cities where you can find new friends</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing -->
+    <!-- About BONBON -->
+    <section class="position-relative" id="about-down">
+      <div class="d-block d-md-none img-hold position-absolute">
+        <img class="img-fluid" src="images/responsive-3.png" alt="" />
+      </div>
+      <div class="d-none d-md-block img-hold position-absolute">
+        <img class="img-fluid" src="images/cov-3.png" alt="" />
+      </div>
+      <div class="container">
+        <h2>What BONBON is All About</h2>
+        <div class="content">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <div class="content-box">
+                <img src="images/Private.png" alt="" />
+                <h3>Private</h3>
+                  <p>
+                    Your safety is important to us. We make sure your BONBON App
+                    experience is secure and honest.
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="content-box">
+                <img src="images/authentication.png" alt="" />
+                <h3>Authentic</h3>
+                <p>
+                  We have an open mind; friendlyity is a healthy, natural, and
+                  crucial aspect in relationships.
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="content-box">
+                <img src="images/transparent.png" alt="" />
+                <h3>Transparent</h3>
+                <p>
+                  We encourage users to be honest to form a real, trustworthy,
+                  and transparent connection.
+                </p>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="content-box last-box">
+                <img src="images/global.png" alt="" />
+                <h3>Global</h3>
+                <p>Get to know singles from all over the world!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Down -->
+    <!-- Start Why Down -->
+    <section class="position-relative" id="why-down">
+      <div class="d-none d-md-block img-hold position-absolute">
+        <img class="img-fluid" src="images/cov-4.png" alt="" />
+      </div>
+      <div class="container">
+        <h2>Why You Need to Get BONBON</h2>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="img-holder">
+              <img class="img-fluid" src="images/why-down-1.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="get-down-content">
+              <h3>Honest and Time Saving</h3>
+              <p>
+                With BONBON Chating, you don’t need to wonder if your Chating
+                app matches are just trying to hook up or go on a chat — we have
+                it all solved for you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <section class="why-down-2 position-relative" id="why-down">
+      <div class="d-block d-md-none img-holde position-absolute">
+        <img class="img-fluid" src="images/res-44.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-5">
+            <div class="get-down-content">
+              <h3>Chat Around the World</h3>
+              <p>
+                Chat and chat internationally with Snap Match - a random chat
+                matchmaking system that connects you with someone online.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="img-holder">
+              <img class="img-fluid" src="images/why-down-2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+    <section class="why-down-3 position-relative" id="why-down">
+      <div class="img-holdd position-absolute">
+        <img
+          class="img-fluid d-none d-md-block"
+          src="images/cov-5.png"
+          alt=""
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="img-holder">
+              <img class="img-fluid" src="images/why-down-1.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="get-down-content">
+              <h3>incredible chat experience</h3>
+              <ul class="d-flex">
+                <li><a href="">Friends</a></li>
+                <li><a href="">Chating</a></li>
+                <li><a href="">Photo</a></li>
+              </ul>
+              <p>
+                Play fun games in your chats to break the ice, like "Photo
+                Challenge" and "Would You Rather?"!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Why Down -->
+    <!-- Start Users Reviews -->
+    <section class="position-relative" id="users-reviews">
+      <div class="img-hold position-absolute">
+        <img class="img-fluid" src="images/cov-6.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-4">
+            <h2>What Real BONBON Users Say About The App</h2>
+            
+          </div>
+          <div class="col-md-7">
+            <div class="swiper-slide slider-card">
+              <div
+                style="height: 100%"
+                class="card-holder d-flex flex-column justify-content-between"
+              >
+                <div>
+                  <img src="images/quoted.png" alt="" />
+                  <p>
+                    The most user friendly application out there on the web,
+                    never had an issue and found attractive people. would
+                    totally recommend BONBON app to everyone, its so easy to
+                    use and they give you great matches!
+                  </p>
+                </div>
+                  <div class="img-holder starss text-center">
+                    <img class="img-fluid" src="images/stars.png" alt="" />
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Users Reviews -->
+    <!-- Start waiting for -->
+    <section class="position-relative" id="waiting-for">
+      <div class="container">
+        <h2>What are you waiting For? Get BONBON with us @BONBONApp</h2>
+        <div
+          class="d-flex flex-md-row apps justify-content-center"
+        >
+          <a href=""
+            ><img class="img-fluid" src="images/apps-1.png" alt=""
+          /></a>
+          <a href=""><img class="img-fluid" src="images/app-2.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+    <!-- End Waiting for -->
+    <!-- Footer -->
+    <section class="position-relative" id="footer">
+      <div class="img-holderr position-absolute d-none d-md-block">
+        <img class="img-fluid" src="images/footer-pol.png" alt="" />
+      </div>
+      <div class="img-hold position-absolute d-block d-md-none">
+        <img class="img-fluid" src="images/res-7.png" alt="" />
+      </div>
+      <div class="container">
+        <div
+          class="links d-flex justify-content-center justify-content-md-between align-items-center"
+        >
+          <div class="img-holder">
+            <a
+              style="
+                text-decoration: none;
+                color: #fff;
+                font-size: 28px;
+                font-weight: 700;
+              "
+              class="navbar-brand"
+              href="#"
+            >
+              BONBON
+            </a>
+          </div>
+          <ul class="d-flex links-list list-unstyled mb-0">
+            <li><a class="text-decoration-none" href="index.html">Home</a></li>
+            <li>
+              <a class="text-decoration-none" href="sign-in.html">Sign in</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="sign-up.html">Sign Up</a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="about.html">BONBON Wiki</a>
+            </li>
+            
+            <li>
+              <a class="text-decoration-none" href="contact-us.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="d-flex social-icons justify-content-center justify-content-md-between align-items-start"
+        >
+          <p>
+            The honest Chating app that puts YOU in control! We encourage users
+            to be honest to form a real, trustworthy, and transparent
+            connection.
+          </p>
+          <ul class="d-flex list-unstyled mb-0">
+            <li>
+              <a class="text-decoration-none" href="">
+                <img src="images/fb-icon.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="">
+                <img src="images/insta-icon.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="">
+                <img src="images/twitter-icon.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="">
+                <img src="images/M-icon.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none" href="">
+                <img src="images/linkedin-icon.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex footer-content justify-content-between">
+          <p>© 2022 BONBON. All Rights Reserved</p>
+          <div class="d-flex">
+            <a href="#"><p>Privacy & Policy</p></a>
+            <a href="terms.html"><p>Terms</p></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- Swiper Js -->
+    <script src="js/Swiper.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        autoplay: {
+          delay: 5000,
+        },
+        spaceBetween: 64,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+        breakpoints: {
+          768: {
+            initialSlide: 1,
+            spaceBetween: 64,
+            slidesPerView: 2,
+            centeredSlides: true,
+            direction: "vertical",
+            autoplay: {
+              delay: 5000,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
